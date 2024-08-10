@@ -1,0 +1,26 @@
+{
+  "name": "zkphore",
+  "version": "1.0.0",
+  "description": "api using semaphore for zkayni proyect",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChioGT/zkphore.git"
+  },
+  "author": "ChioGT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChioGT/zkphore/issues"
+  },
+  "homepage": "https://github.com/ChioGT/zkphore#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

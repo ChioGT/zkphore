@@ -1,0 +1,14 @@
+{
+    "beneficiarios": [
+        {
+            "id": 1,
+            "grupo": "Airdrop grupo 1",
+            "monto": "10"
+        },
+        {
+            "id": 2,
+            "grupo": "Airdrop grupo 1",
+            "monto": "10"
+        }
+    ]
+}
