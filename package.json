@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ChioGT/zkphore#readme",
   "dependencies": {
+    "@semaphore-protocol/core": "^4.0.1",
     "express": "^4.19.2"
   },
   "devDependencies": {
