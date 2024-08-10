@@ -5,22 +5,23 @@ import fs from 'fs';
 const app = express();
 
 const newIdentity = (secret) => {
-    const deterministicIdentity = new Identity(toString(secret));
-    console.log("Deterministic Identity: ", deterministicIdentity);
+    const deterministicIdentity = new Identity(secret);
+    //console.log("Deterministic Identity: ",deterministicIdentity);
 };
 
 const newGroup = () => {
     // array of members to add to the group
-    const members = [];
+    let members = [];
     for (let x=0; x < 5; x++){
-        let ide = newIdentity(toString(x));
-        members.push(ide("_commitment"));
+        let idanon = new Identity(toString(x));
+        members.push(idanon.commitment);
     }; 
     const group = new Group(members);
     console.log("Group size: ", group.members.length);
+    console.log("The all group: ", group);
 };
 
-newIdentity("secreto");
+newGroup();
 
 const readData = () => {
     try{
